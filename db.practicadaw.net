@@ -1,0 +1,18 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.practicadaw.net. juanrube.practicadaw.net. (
+			20190430	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@		IN		NS		ns1.practicadaw.net.
+@		IN 		MX		1		correos.practicadaw.net.
+ftp				CNAME	pc2
+ns1				IN 		A 		192.168.43.100
+pc1				IN 		A		192.168.43.150
+pc2				IN 		A		192.168.43.151
+router			IN 		A		192.168.43.1
